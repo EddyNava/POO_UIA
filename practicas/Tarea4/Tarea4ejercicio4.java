@@ -1,10 +1,12 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Tarea4ejercicio4 {
 	public static void main (String [] args) {
 
 		int number = 0, value1 = 0, value2 = 0, value3 = 0, value4 = 0, value5 = 0, minimum = 0, maximum = 0;
-		int range = 0, sum = 0;
+		int range = 0, sum = 0, mean = 0, count = 0;
+		double variance = 0, StdDev = 0;
 
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Welcome to Eddy's calculator");
@@ -92,17 +94,40 @@ public class Tarea4ejercicio4 {
 		System.out.println("The Sum is: " + sum );
 
 
-		// Count
+		/* Count
+		* Count es para contar el numero de valores ingresados.
+		* en este caso no varia ya que esta definido el numero de valores a ingresar
+		*/ 
+		count = 5;
+		System.out.println( "The count is: " + count );
 
 		// Mean 
 
-		// Median
+		mean = sum / 5;
+		System.out.println("The Mean is: " + mean );
 
-		// Mode
+
+		/* Median
+		* Median es el valor que se encuentra en medio de los valores recibidos, por ejemplo
+		* si se reciben 5 numeros el Median serìa el 3er valor una vez acomodados los numeros de
+		* menor a mayor, si se reciben 8 numeros, median sería el promedio de la suma entre el
+		* 4to valor y el 5to
+		*/
+		System.out.println( "The Median is:" );
+
+		/* Mode
+		*El valor que se repite más veces
+		*/
+		
+		//Variance
+
+		variance = (((value1 - mean)*(value1 - mean)) + ((value2 - mean)*(value2 - mean)) + ((value3 - mean)*(value3 - mean)) + ((value4 - mean)*(value4 - mean)) + ((value5 - mean)*(value5 - mean))) / (count - 1);
+		System.out.println("The Variance is: " + variance );
 
 		// Standard Deviation
 
-		// Variance
+		StdDev = Math.sqrt(variance);
+		System.out.printf("The Standard Deviation is: " + StdDev );
 
 		// Midrange
 
