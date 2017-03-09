@@ -35,7 +35,10 @@ public class Tarea5Ejercicio1 {
 			mediana = (size / 2);
 			
 
-			System.out.println("La mediana es: " + numeros[mediana]);
+			//System.out.println("La mediana es: " + numeros[mediana]);
+			for (int i = mediana ; i = mediana ; i++);
+
+				System.out.println("La mediana es: " + numeros[i]);
 			
 		}
 		catch(Exception e) { }
