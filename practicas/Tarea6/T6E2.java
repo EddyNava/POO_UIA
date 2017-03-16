@@ -7,6 +7,7 @@ public class T6E2 {
 	public static String traduce ;
 	public static int contador , i ;
 	public static int opc;
+	
 
 
 
@@ -29,12 +30,13 @@ public class T6E2 {
 			System.out.print("Introducir la palabra que desea traducir (ingles o espanol): ");
 			traduce = entrada.readLine();
 
-
+			boolean flag = true;
 
 
 			for(i = 0; i< palabras.length; i++){
 				if(traduce.equalsIgnoreCase(palabras[i])){ 
 					System.out.println("Traduccion: " + traductor[i]);
+
 				}
 
 			}
@@ -44,9 +46,17 @@ public class T6E2 {
 
 				}
 
+				flag = false;
+
+			}
+			if (flag != true) {
+
+				System.out.println("Esa palabra no está en el diccionario");
+
 			}
 
 		}  catch	(Exception e) { }
+
 	}
 
 
@@ -73,7 +83,7 @@ public class T6E2 {
 					again = true;
 
 				} else if (opc == 2) {
-					
+
 					break;
 				}
 			}catch (Exception e) { }
@@ -93,10 +103,10 @@ public class T6E2 {
 
 				if (opc == 1) {
 
-					
+
 					T6E2.Traducir(entrada , i , traduce , palabras , traductor );
 					again = true;
-					
+
 				} else if (opc == 2) {
 
 					break;
