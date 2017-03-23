@@ -1,7 +1,5 @@
 import java.io.*;
 
-
-
 public class T6E1 {
 
 	public static void Menu () {

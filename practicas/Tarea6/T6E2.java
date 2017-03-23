@@ -36,6 +36,7 @@ public class T6E2 {
 			for(i = 0; i< palabras.length; i++){
 				if(traduce.equalsIgnoreCase(palabras[i])){ 
 					System.out.println("Traduccion: " + traductor[i]);
+					flag = false;
 
 				}
 
@@ -43,17 +44,18 @@ public class T6E2 {
 			for(i = 0; i< traductor.length; i++){
 				if(traduce.equalsIgnoreCase(traductor[i])){
 					System.out.println("Traduccion: " + palabras[i]);
+					flag = false;
 
 				}
 
-				flag = false;
+				if (flag == true) {
 
+					System.out.println("Esa palabra no está en el diccionario");
+
+				}
+				
 			}
-			if (flag != true) {
 
-				System.out.println("Esa palabra no está en el diccionario");
-
-			}
 
 		}  catch	(Exception e) { }
 
