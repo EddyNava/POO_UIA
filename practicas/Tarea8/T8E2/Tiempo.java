@@ -7,6 +7,9 @@ public class Tiempo {
 	private int hora;
 	private int min;
 	private int seg;
+	//Atributo de clase
+	private static Calendar tiempo = new GregorianCalendar();
+
 
 	//Constructores
 	public Tiempo () {
@@ -16,7 +19,6 @@ public class Tiempo {
 
 	//Metodos
 	public void setTiempo() {
-		Calendar tiempo = new GregorianCalendar();
 		this.hora = tiempo.get(Calendar.HOUR_OF_DAY);
 		this.min = tiempo.get(Calendar.MINUTE);
 		this.seg = tiempo.get(Calendar.SECOND);
@@ -37,7 +39,7 @@ public class Tiempo {
 	}
 
 	public static void printTiempo(int[] tiempo) {
-		System.out.println(tiempo[0]+"/"+tiempo[1]+"/"+tiempo[2]);
+		System.out.println(tiempo[0]+":"+tiempo[1]+":"+tiempo[2]);
 	}
 	
 

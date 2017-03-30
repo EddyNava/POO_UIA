@@ -1,4 +1,3 @@
-import Lee.*;
 
 //Nombre
 public class Coche { 
@@ -13,13 +12,19 @@ public class Coche {
 		this.placa = null;
 	}
 
+	public Coche (String tamanio_param , String placa_param) {
+		this.tamanio = tamanio_param;
+		this.placa = placa_param;
+	}
+
 	//Metodos
+
 	public void setTamanio (String tamanio_param) {
 		this.tamanio = tamanio_param;
 	}
 
 	public String getTamanio () {
-		return tamanio;
+		return this.tamanio;
 	}
 
 	public void setPlaca (String placa_param) {
@@ -27,6 +32,13 @@ public class Coche {
 	}
 
 	public String getPlaca () {
-		return placa;
+		return this.placa;
 	}
+
+	public void printCoche () {
+
+		System.out.println("Placa: "+ this.placa);
+		System.out.println("Tamaño: "+ this.tamanio);
+	}
+
 }
