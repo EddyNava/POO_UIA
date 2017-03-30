@@ -7,6 +7,31 @@ public class Fecha {
 
 	
 
+	
+	public Fecha () {
+		this.setFecha();
+	}
+
+	public Fecha (int dia_param) {
+		this.setFecha();
+		this.dia = dia_param;
+
+	}
+
+	public Fecha (int dia_param, int mes_param) {
+		this.setFecha();
+		this.dia = dia_param;
+		this.mes = mes_param;
+	}
+
+	public Fecha (int dia_param, int mes_param, int anio_param) {
+		this.dia = dia_param;
+		this.mes = mes_param;
+		this.anio = anio_param;
+	}
+
+
+
 	public void setFecha() {
 		Calendar fecha = new GregorianCalendar();
 		this.dia = fecha.get(Calendar.DAY_OF_MONTH);

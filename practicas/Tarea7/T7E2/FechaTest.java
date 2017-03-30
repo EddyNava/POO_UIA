@@ -1,5 +1,6 @@
 public class FechaTest {
-	public static void main(String[] agrs) {
+
+	public static void main( String[] agrs ) {
 		
 		Fecha fecha = new Fecha();
 		int ret_fecha[] = new int[3];
@@ -13,12 +14,12 @@ public class FechaTest {
 
 		Fecha fecha_dia_mes = new Fecha();
 		int ret_fecha_dia_mes[] = new int[3];
-		fecha_dia_mes.setFecha( 24 , 08 );
+		fecha_dia_mes.setFecha( 24 , 8 );
 		fecha_dia_mes.getFecha(ret_fecha_dia_mes);
 
 		Fecha fecha_dia_mes_anio = new Fecha();
 		int ret_fecha_dia_mes_anio[] = new int[3];
-		fecha_dia_mes_anio.setFecha( 24 , 08 , 1988 );
+		fecha_dia_mes_anio.setFecha( 24 , 8 , 1988 );
 		fecha_dia_mes_anio.getFecha(ret_fecha_dia_mes_anio);
 
 
