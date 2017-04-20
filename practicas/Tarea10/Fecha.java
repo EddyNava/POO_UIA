@@ -28,7 +28,7 @@ public class Fecha {
 
 	}
 
-	public void imprimeFecha (int [] retorno_fecha) {
+	public static void imprimeFecha (int [] retorno_fecha) {
 		System.out.println (retorno_fecha[0]+":"+retorno_fecha[1]+":"+retorno_fecha[2]);
 	}
 	

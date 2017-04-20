@@ -1,6 +1,6 @@
 public class Ticket {
 
-	private int folio;
+	protected int folio;
 
 	public Ticket () {
 		this.folio = 0;

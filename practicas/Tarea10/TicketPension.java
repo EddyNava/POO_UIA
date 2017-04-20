@@ -1,45 +1,43 @@
 public class TicketPension extends Ticket {
 
-	private Fecha fecha;
+	protected Fecha fecha = new Fecha();
+	// Cliente cliente = new Cliente();
 	private int[] ret_fechaSalida = new int[3];
 	private int[] ret_fechaEntrada = new int[3];
-	private Cliente cliente;
 	
 	public TicketPension() {
 		super();
-		fecha = new Fecha();
-		cliente = new Cliente ();
 	}
 
 	public void setFechaEntrada () {
-		fecha.setfecha();
+		fecha.setFecha();
 	}
 
 	public void getFechaEntrada () {
-		fecha.getFecha(ret_fechaEntrada);
+		fecha.getFecha (ret_fechaEntrada);
 	}
 
 	public void setFechaSalida () {
-		fecha.setfecha ();
+		fecha.setFecha ();
 	}
 
 	public void getFechaSalida () {
-		fecha.getFecha(ret_fechaSalida);
+		fecha.getFecha (ret_fechaSalida);
 	}
 
-	public int imprimeFechaEntrada() {
-		System.out.println ( fecha.getFecha(ret_fechaEntrada));
+	public void imprimeFechaEntrada() {
+		fecha.getFecha (ret_fechaEntrada);
 	}
 
-	public int imprimeFechaSalida() {
-		System.out.println ( fecha.getFecha(ret_fechaSalida) );
+	public void imprimeFechaSalida() {
+		fecha.getFecha (ret_fechaSalida);
 	}
 
-	public static void imprimeTicketPension() {
-		Ticket.imprimeFolio();
-		Cliente.imprimeCliente();
-		imprimeFechaEntrada(ret_fechaEntrada);
-		imprimeFechaSalida(ret_fechaSalida);
+	public void imprimeTicketPension() {
+		imprimeFolio();
+		//cliente.imprimeNombre();
+		imprimeFechaEntrada();
+		imprimeFechaSalida();
 	}
 
 }
