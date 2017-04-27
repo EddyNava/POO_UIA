@@ -1,7 +1,6 @@
 public class TicketPension extends Ticket {
 
 	protected Fecha fecha = new Fecha();
-	// Cliente cliente = new Cliente();
 	private int[] ret_fechaSalida = new int[3];
 	private int[] ret_fechaEntrada = new int[3];
 	
@@ -34,8 +33,7 @@ public class TicketPension extends Ticket {
 	}
 
 	public void imprimeTicketPension() {
-		imprimeFolio();
-		//cliente.imprimeNombre();
+		imprimeTicket();
 		imprimeFechaEntrada();
 		imprimeFechaSalida();
 	}

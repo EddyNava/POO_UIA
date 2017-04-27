@@ -32,21 +32,19 @@ public class EstacionamientoTest {
 
 			
 			case 1:
-			System.out.println("Estacionamiento");
-			ticketH.imprimeTicketHoras ();
-
+				System.out.println("Estacionamiento");
+				ticketH.imprimeTicketHoras ();
+				System.out.println("No hay tinta");
+				ticketH.imprimeTicketHoras ();
 			break;
 
 			case 2:
-			System.out.println("Pensión");
-			ticketP.imprimeTicketPension();
-
+				System.out.println("Pensión");
+				ticketP.imprimeTicketPension();
 			break;
 
 			default:
-			System.out.println("Hasta luego");
-
-
+				System.out.println("Hasta luego");
 			break;
 
 		}

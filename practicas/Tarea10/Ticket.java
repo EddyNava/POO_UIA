@@ -19,7 +19,8 @@ public class Ticket {
 		return this.folio;	
 	}
 	
-	public void imprimeFolio () {
+	public void imprimeTicket () {
+		System.out.println ("Sm4rt Parking 4U");
 		System.out.println ("Folio: " + sumaFolio());
 	}
 }
